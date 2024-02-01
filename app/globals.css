@@ -8,15 +8,12 @@ body {
 
 .noto {
   font-family: "Noto Kufi Arabic", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
+  justify-content: space-between;
 }
