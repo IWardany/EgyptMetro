@@ -18,17 +18,17 @@ const ChooseStation = ({ background, station, changeStation }: Props) => {
             <option>قم باختيار المحطة</option>
             <optgroup label="الخط الأول" className="text-yellow-200">
                 {line1.map((station, index) =>
-                    <option className='text-white' key={index}>{station[0]}</option>
+                    <option className='text-white' key={index}>{station}</option>
                 )}
             </optgroup>
             <optgroup label="الخط الثاني" className="text-yellow-200">
                 {line2.map((station, index) =>
-                    <option className='text-white' key={index}>{station[0]}</option>
+                    <option className='text-white' key={index}>{station}</option>
                 )}
             </optgroup>
             <optgroup label="الخط الثالث" className="text-yellow-200">
                 {line3.map((station, index) =>
-                    <option className='text-white' key={index}>{station[0]}</option>
+                    <option className='text-white' key={index}>{station}</option>
                 )}
             </optgroup>
         </select>

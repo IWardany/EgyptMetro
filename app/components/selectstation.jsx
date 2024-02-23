@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Title from "./titles";
-import { line1, line2, line3 } from "../lib/lines";
 import ChooseStation from "./choose";
-
+import { useRouter } from "next/navigation";
 const SelectStations = () => {
+  let router = useRouter();
   let [startStation, setStartStation] = useState("");
   let [endStation, setEndStation] = useState("");
   let [people, setPeople] = useState(1);
@@ -19,9 +19,9 @@ const SelectStations = () => {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(startStation);
-    console.log(endStation);
-    console.log(people);
+    router.push(
+      `/tripdetails?start=${startStation}&end=${endStation}&people=${people}`
+    );
   }
   return (
     <div className="max-w-md m-auto text-center">

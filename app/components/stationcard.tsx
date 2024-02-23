@@ -6,7 +6,7 @@ interface Props {
 const StationCard = ({ station, background }: Props) => {
     return (
         <div
-            className={`noto block text-xl text-center py-6 px-12 text-white rounded-full my-8 ${background}`}>
+            className={`noto block text-xl text-center py-6 px-12 text-white rounded-full my-4 ${background}`}>
             <h3>{station}</h3>
         </div>
     )
